@@ -48,5 +48,21 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 	{
 		return $this->email;
 	}
-	
+
+
+	/**
+	  *Mutator to set username as lowercase 
+	  */	
+	public function setUsernameAttribute($value)
+	{
+	    $this->attributes['email'] = strtolower($value);
+	}
+
+	/**
+	  *Mutator to Hash all passwords 
+	  */
+	public function setPasswordAttribute($value)
+	{
+	    $this->attributes['password'] = Hash::make($value);
+	}
 }
