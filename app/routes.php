@@ -11,14 +11,19 @@
 |
 */
 
-Route::get('/sayhello/{name}', function($name)
-{
-    if ($name == "Chris")
-    {
-        return Redirect::to('/');
-    }
-    else
-    {
-        return "Hello, $name!";
-    }
+Route::resource('posts', 'PostController');
+
+Route::get('/', 'HomeController@home');
+
+Route::get('/resume', 'HomeController@resume');
+
+Route::get('/portfolio', 'HomeController@portfolio');
+
+Route::get('/contact','HomeController@contact');
+
+Route::get('/create','PostController@create');
+
+Route::get('orm-test', function (){
 });
+
+
