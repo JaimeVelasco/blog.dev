@@ -13,20 +13,10 @@ class BaseModel extends Eloquent {
 	    return $utc->setTimezone('America/Chicago');
 	}
 
-	/**
-	  *Mutator to set username as lowercase 
-	  */	
-	public function setUsernameAttribute($value)
-	{
-	    $this->attributes['email'] = strtolower($value);
+	public function getUpdatedAtAttribute($value) {
+	    $utc = Carbon::createFromFormat($this->getDateFormat(), $value);
+	    return $utc->setTimezone('America/Chicago');
 	}
-
-	/**
-	  *Mutator to Hash all passwords 
-	  */
-	public function setPasswordAttribute($value)
-	{
-	    $this->attributes['password'] = Hash::make($value);
-	}
+	
 
 }
