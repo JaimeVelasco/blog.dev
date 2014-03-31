@@ -28,6 +28,6 @@ web1:
 cache1:
   type: redis
 
-web3:
+web2:
   name: <Jaime Velasco Gomez>
   document_root: admin  
