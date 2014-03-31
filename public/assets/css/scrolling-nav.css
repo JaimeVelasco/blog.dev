@@ -49,6 +49,7 @@ html {
 
 @media(min-width:767px) {
     .navbar {
+        position: absolute;
         padding: 20px 0;
         background-color: transparent;
         border-bottom: none;

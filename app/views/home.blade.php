@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="jumbotron">
-                     
+                     <h1>Hi there!</h1>
                        <h2><div id="Demo" data-typer-targets="
                        {&quot;targets&quot; : [
                              &quot;I'm a LAMP Stack Developer&quot;,
@@ -50,19 +50,7 @@
 
     
 
-     <section id="portfolio" class="portfolio-section">
-        <div class="container">
-            <div class="row">
-              <div class="col-md-4"><p><i class="fa fa-smile-o fa-4x"></i></p>
-</div>
-              <div class="col-md-4"><p><i class="fa fa-shopping-cart fa-4x"></i></p>
-</div>
-              <div class="col-md-4"><p><i class="fa fa-mobile-phone fa-4x"></i></p>
-</div>
-            </div>
-        </div>
-    </section>
-
+     
 
 @section('bottomscript')
 
@@ -84,7 +72,7 @@
     </script>
 
 
-       <!-- memory game javascritp -->
+
 
   
 @stop
