@@ -10,6 +10,7 @@ body {
   font-family: "Lato",sans-serif;
   font-style: normal;
   font-weight: 100;
+  padding-top: 30px;
   font-size: 64px ;
   margin: 0  ;
 }
