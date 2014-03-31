@@ -41,7 +41,7 @@
 				<a href="{{{ action('PostController@show', $post->id) }}}"><h3>{{{ $post->title }}}</h3></a>		    
 				<p>{{{ Str::words($post->body, 10) }}}</p>
 			    <div>
-				<span class="badge">{{{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i: A ') }}}</span><div class="pull-right"></span></div>   
+				<span class="badge">{{{ $post->created_at->format('l, F jS Y @ h:i: A ') }}}</span><div class="pull-right"></span></div>   
 				     </div>
 				    <hr>
 				@endforeach
