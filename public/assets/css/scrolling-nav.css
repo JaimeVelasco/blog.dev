@@ -151,10 +151,10 @@ button  {
     font-family: 'Lato', sans-serif; font-weight:100;
     font-size: 12px;
 }       
-
+/*
 .navbar-form input, .form-inline input {
     width:auto;
-}
+}*/
 
 header {
     height:270px;

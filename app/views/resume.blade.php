@@ -11,8 +11,7 @@ body {
   font-style: normal;
   font-weight: 100;
   font-size: 64px ;
-  margin: 0 ;
-  padding: 90px ;
+  margin: 0  ;
 }
 
 #part-1 {
@@ -92,7 +91,7 @@ body {
 <div id="part-1">
 
 <p id="hello">Hello</p>
-<p id="subtext">Future employer!</p>
+<p id="subtext">world!</p>
 
 
 
