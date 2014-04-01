@@ -31,3 +31,7 @@ cache1:
 web2:
   name: <Jaime Velasco Gomez>
   document_root: admin  
+
+  web3:
+  name: <Jaime Velasco Gomez>
+  document_root: admin  
