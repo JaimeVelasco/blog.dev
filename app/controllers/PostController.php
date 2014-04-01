@@ -9,7 +9,7 @@ class PostController extends \BaseController {
 		parent::__construct();
 
 		//run an auth filter before all methods except index and show.
-		$this->beforeFilter('auth.basic', ['except' => ['index', 'show']]);
+		// $this->beforeFilter('auth.basic', ['except' => ['index', 'show']]);
 	}
 
 
@@ -23,10 +23,24 @@ class PostController extends \BaseController {
 	 */
 	public function index()
 	{
+		//search list of all posts
+		$search = Input::get('search');
+		$query = Post::orderBy('created_at', 'desc');
+		if (is_null($search))
+		{
+			$posts = $query->paginate(4);
 
-		$posts = Post::orderBy('created_at', 'desc')->paginate(4);
+		} else {
+
+			$posts = $query->where('title', 'LIKE', "%{$search}%")
+			->orWhere('body', 'LIKE', "%{$search}%")
+			->paginate(4);
+		}
+		
 		return View::make('posts.index')->with('posts', $posts);
 	}
+
+
 
 	/**
 	 * Show the form for creating a new resource.

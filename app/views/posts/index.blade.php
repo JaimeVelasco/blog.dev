@@ -27,12 +27,21 @@
 
 
 @section('content')
- 	<div class="container" id="big"></div>
+<div
+	 class="container" id="big">
+</div>
  	<div id= "createbtn" class="container">
-	<div class="col-md-4 pull-right">
-			<a href="{{{action('PostController@create') }}}"><h2>Create new post</h2></a>
-	</div>
-
+		<div class="col-sm-4 pull-right">
+				<a href="{{{action('PostController@create') }}}"><h2>Create new post</h2></a>
+			<div class="container col-sm-12">
+				{{ Form::open(array('action' => array('PostController@index'), 'method' => 'GET')) }}
+					{{ Form::label('search', 'Search Posts') }}
+					<br>
+					<p>{{ Form::text('search') }}
+					{{ Form::submit('Search')}}</p>
+				{{Form::close()}}	
+			</div>
+		</div>
 	</div>
 
 	<div class="container">
@@ -45,7 +54,7 @@
 				     </div>
 				    <hr>
 				@endforeach
-			{{ $posts->links() }}    
+			{{ $posts->appends(array('search' => Input::get('search')))->links() }}    
 			</div> 
 	</div>
  

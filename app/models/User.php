@@ -1,5 +1,5 @@
 <?php
-
+	
 use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableInterface;
 
@@ -18,6 +18,19 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 	 * @var array
 	 */
 	protected $hidden = array('password');
+
+	 /***
+	   *
+	   *
+       *Relationship for has many posts
+       *
+       *
+       ***/
+
+	public function posts()
+	{
+	    return $this->hasMany('Post');
+	}
 
 	/**
 	 * Get the unique identifier for the user.
@@ -49,7 +62,6 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 		return $this->email;
 	}
 
-
 	/**
 	  *Mutator to set username as lowercase 
 	  */	
@@ -65,4 +77,6 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 	{
 	    $this->attributes['password'] = Hash::make($value);
 	}
+
+	
 }
