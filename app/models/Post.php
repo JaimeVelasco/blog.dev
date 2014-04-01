@@ -6,6 +6,20 @@ class Post extends BaseModel {
     protected $table = 'posts';
 
     /***
+	   *
+	   *
+       *Define relationship to user (author)
+       *
+       *
+       ***/
+
+    public function user()
+	{
+	    return $this->belongsTo('User');
+	}
+
+
+    /***
        *VALIDATION RULES
        ***/
 
@@ -14,8 +28,6 @@ class Post extends BaseModel {
     'body'       => 'required|max:10000'
 	);
     
-    public function user()
-	{
-	    return $this->belongsTo('User');
-	}
+
+
 }

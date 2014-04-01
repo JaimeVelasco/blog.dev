@@ -11,19 +11,38 @@
 |
 */
 
+/* Uncomment to Log Eloquent Queries */
+// Event::listen('illuminate.query', function($sql, $bindings, $time){
+//   Log::info($sql);
+//   Log::info(implode($bindings, ', '));
+// });
+
+
+
+
+
+
+Route::get('/', 'HomeController@showHome');
+
+route::get('/login', 'HomeController@showLogin');
+
+route::post('/login', 'HomeController@doLogin');
+
+Route::get('/resume', 'HomeController@showResume');
+
+Route::get('/portfolio', 'HomeController@showPortfolio');
+
+Route::get('/contact','HomeController@showContact');
+
 Route::resource('posts', 'PostController');
-
-Route::get('/', 'HomeController@home');
-
-Route::get('/resume', 'HomeController@resume');
-
-Route::get('/portfolio', 'HomeController@portfolio');
-
-Route::get('/contact','HomeController@contact');
 
 Route::get('/create','PostController@create');
 
+
+
+
 Route::get('orm-test', function (){
+
 });
 
-
+ 

@@ -15,30 +15,54 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function home()
+	public function showHome()
 	{
 		return View::make('home');
 	}
 
 
-	public function resume()
+	public function showResume()
 	{
 		return View::make('resume');
 	}
 
 
-	public function portfolio()
+	public function showPortfolio()
 	{
 		return View::make('portfolio');
 	}
 
 
-	public function contact()
+	public function showContact()
 	{
 		return View::make('contact');
 	}
 
 
+	public function showLogin()
+	{
+		return View::make('login');
+	}
+
+	public function doLogin()
+	{
+			if (Auth::attempt(array('email' => Input::get('email'), 'password' => Input::get('password'))))
+		{
+		    return Redirect::intended('/');
+		}
+		else
+		{
+		  
+		   return Redirect::back()->withInput();
+		}
+	}
+
+
+	public function logout()
+	{
+		Auth::logout();
+		return Redirect::action('PostController@index');
+	}
 	
 
 

@@ -39,13 +39,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="{{{ action('HomeController@resume') }}}">Resume</a>
+                        <a href="{{{ action('HomeController@showResume') }}}">Resume</a>
                     </li> 
                     <li class="page-scroll">
-                        <a href="{{{ action('HomeController@portfolio') }}}">Portfolio</a>
+                        <a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="{{{ action('HomeController@contact') }}}">Contact</a>
+                        <a href="{{{ action('HomeController@showContact') }}}">Contact</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="{{{ action('PostController@index') }}}">Blog</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="{{{ action('HomeController@showLogin') }}}">Login</a>
                     </li>
                 </ul>
             </div>
