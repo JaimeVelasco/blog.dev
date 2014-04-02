@@ -21,6 +21,7 @@ body {
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
 	  margin-bottom: 10px;
+	  text-align: center;
 }
 .form-signin .checkbox {
 	  font-weight: normal;
@@ -61,14 +62,14 @@ body {
 
 <div class="blog-post">
 	{{ Form::open(array('action' => 'HomeController@doLogin', 'class' => 'form-signin')) }}
-        <h2 class="form-signin-heading" text-align="center">Please sign in</h2>
+        <h2 class="form-signin-heading">Please sign in</h2>
         <!-- <input name="email" type="email" class="form-control" placeholder="Email address" required autofocus> -->
          {{ Form::email( '', null, array('class' => 'form-control', 'placeholder' => 'Email address', 'required', 'autofocus'))}}
         
         {{ Form::password( null, array('class' => 'form-control', 'placeholder' => 'Password', 'required'))}}
-        <label class="checkbox">
-         <input name="remember" type="checkbox" value="remember-me"> Remember me
-        </label>
+  
+        <p>{{ Form::checkbox('remember', 'Remember-me', true, array('class' => 'remember', ))}} Remember me</p>
+
       
         {{ Form::submit('Login',  array('class' => 'btn btn-lg btn-primary btn-block')) }}
 	{{ Form::close() }}
