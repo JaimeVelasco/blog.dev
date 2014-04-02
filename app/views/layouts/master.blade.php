@@ -72,6 +72,12 @@
             @if (Session::has('errorMessage'))
                 <div class="alert alert-warning alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>{{{ Session::get('errorMessage') }}}</div>
             @endif
+            @if (Session::has('loginSucc'))
+                <div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>{{{ Session::get('loginSucc') }}}</div>
+            @endif
+            @if (Session::has('loginFail'))
+                <div class="alert alert-warning alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>{{{ Session::get('loginFail') }}}</div>
+            @endif
         </div>
     </div>
     

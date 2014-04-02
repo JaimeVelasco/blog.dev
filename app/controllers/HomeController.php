@@ -48,12 +48,13 @@ class HomeController extends BaseController {
 	{
 			if (Auth::attempt(array('email' => Input::get('email'), 'password' => Input::get('password'))))
 		{
+		    Session::flash('loginSucc', 'Login succesful!');
 		    return Redirect::intended('/');
 		}
 		else
 		{
-		  
-		   return Redirect::back()->withInput();
+		  Session::flash('loginFail', 'Login failed, please check for errors.');
+		  return Redirect::back()->withInput();
 		}
 	}
 

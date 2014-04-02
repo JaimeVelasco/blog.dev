@@ -10,7 +10,12 @@ body {
 
 	  padding-top: 70px;
 	  padding-bottom: 40px;
-	  background-color: #eee;
+	  
+}
+
+loginContainer{
+	background-color: #eee;
+
 }
 
 .form-signin {
@@ -59,22 +64,22 @@ body {
 
 @section('content')
 
-
-<div class="blog-post">
-	{{ Form::open(array('action' => 'HomeController@doLogin', 'class' => 'form-signin')) }}
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <!-- <input name="email" type="email" class="form-control" placeholder="Email address" required autofocus> -->
-         {{ Form::email( '', null, array('class' => 'form-control', 'placeholder' => 'Email address', 'required', 'autofocus'))}}
-        
-        {{ Form::password( null, array('class' => 'form-control', 'placeholder' => 'Password', 'required'))}}
-  
+<div class="loginContainer">
+	<div class="blog-post">
+		{{ Form::open(array('action' => 'HomeController@doLogin', 'class' => 'form-signin')) }}
+	        <h2 class="form-signin-heading">Please sign in</h2>
+	        <!-- <input name="email" type="email" class="form-control" placeholder="Email address" required autofocus> -->
+	       {{ Form::email( '', null, array('class' => 'form-control', 'placeholder' => 'Email address', 'required', 'autofocus'))}}
+	       {{ $errors->first('email', '<p><span class="help-block">:message</span><p>') }}
+	       {{ Form::password( null, array('class' => 'form-control', 'placeholder' => 'Password', 'required'))}}
+		   {{ $errors->first('password', '<p><span class="help-block">:message</span><p>') }}
         <p>{{ Form::checkbox('remember', 'Remember-me', true, array('class' => 'remember', ))}} Remember me</p>
 
-      
-        {{ Form::submit('Login',  array('class' => 'btn btn-lg btn-primary btn-block')) }}
-	{{ Form::close() }}
+	      
+	        {{ Form::submit('Login',  array('class' => 'btn btn-lg btn-primary btn-block')) }}
+		{{ Form::close() }}
+	</div>
 </div>
-
 		
 @stop
 
