@@ -28,6 +28,8 @@ route::get('/login', 'HomeController@showLogin');
 
 route::post('/login', 'HomeController@doLogin');
 
+route::get('/logout', 'HomeController@logout');
+
 Route::get('/resume', 'HomeController@showResume');
 
 Route::get('/portfolio', 'HomeController@showPortfolio');

@@ -58,6 +58,8 @@ class PostController extends \BaseController {
 	 */
 	public function store()
 	{
+
+		//save to DB
 		Log::info(Input::all());	
 	    $validator = Validator::make(Input::all(), Post::$rules);
 

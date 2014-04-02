@@ -50,9 +50,16 @@
                     <li class="page-scroll">
                         <a href="{{{ action('PostController@index') }}}">Blog</a>
                     </li>
+                    @if (Auth::check())
                     <li class="page-scroll">
-                        <a href="{{{ action('HomeController@showLogin') }}}">Login</a>
+                        <a href="{{{ action('HomeController@logout') }}}"><span class="label label-warning" >Logout&nbsp;{{ Auth::user()->email }}</span></a>
                     </li>
+                    @else
+
+                    <li class="page-scroll">
+                        <a href="{{{ action('HomeController@showLogin') }}}"><span class="label label-success">Login</span></a>
+                    </li>
+                    @endif
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -71,9 +78,6 @@
             @endif
             @if (Session::has('errorMessage'))
                 <div class="alert alert-warning alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>{{{ Session::get('errorMessage') }}}</div>
-            @endif
-            @if (Session::has('loginSucc'))
-                <div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>{{{ Session::get('loginSucc') }}}</div>
             @endif
             @if (Session::has('loginFail'))
                 <div class="alert alert-warning alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>{{{ Session::get('loginFail') }}}</div>
