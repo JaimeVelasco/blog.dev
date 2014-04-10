@@ -52,7 +52,7 @@
                     </li>
                     @if (Auth::check())
                     <li class="page-scroll">
-                        <a href="{{{ action('HomeController@logout') }}}"><span class="label label-warning" >Logout&nbsp;{{ Auth::user()->email }}</span></a>
+                        <a href="{{{ action('HomeController@showLogin') }}}"><span class="label label-warning" >Logout&nbsp;{{ Auth::user()->email1 }}</span></a>
                     </li>
                     @else
 
@@ -95,6 +95,12 @@
     <script src="/assets/js/scrolling-nav.js"></script>
 
     @yield('bottomscript')
+    <script>
+        $('.alert').fadeIn();
+        setTimeout(function() {
+        $('.alert').fadeOut();
+        }, 2000);
+    </script>
 
 
 </body>

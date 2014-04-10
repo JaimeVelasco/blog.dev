@@ -21,13 +21,11 @@ class Post extends BaseModel {
 
     /***
        *VALIDATION RULES
-       ***/
+        ***/
 
     public static $rules = array(
     'title'      => 'required|max:100',
     'body'       => 'required|max:10000'
 	);
-    
-
 
 }

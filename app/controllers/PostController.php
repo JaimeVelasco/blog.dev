@@ -73,10 +73,15 @@ class PostController extends \BaseController {
 	    else
 	    {	
 	    	 // validation succeeded, create and save the post
-	        $post = new Post();
+	        $post = new Post;
 	        $post->user_id = Auth::user()->id;
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
+	        if (Input::hasFile('image'))
+	        {
+	        	//upload image
+	        	$post->assignImage(Input::file('image'));
+	        }
 			$post->save();
 			Session::flash('successMessage', 'Post Created Succesfully');
 			return Redirect::action('PostController@index'); // create the validator
@@ -132,6 +137,11 @@ class PostController extends \BaseController {
 	    	 // validation succeeded, create and save the post
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
+			if (Input::hasFile('image'))
+	        {
+	        	//upload image
+	        	$post->assignImage(Input::file('image'));
+	        }
 			$post->save();
 			Session::flash('successMessage', 'Post Updated Succesfully');
 			return Redirect::action('PostController@index'); // create the validator

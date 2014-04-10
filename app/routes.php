@@ -24,11 +24,11 @@
 
 Route::get('/', 'HomeController@showHome');
 
-route::get('/login', 'HomeController@showLogin');
+Route::get('/login', 'HomeController@showLogin');
 
-route::post('/login', 'HomeController@doLogin');
+Route::post('/login', 'HomeController@doLogin');
 
-route::get('/logout', 'HomeController@logout');
+Route::get('/logout', 'HomeController@logout');
 
 Route::get('/resume', 'HomeController@showResume');
 
