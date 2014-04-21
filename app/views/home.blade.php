@@ -15,6 +15,10 @@ body {
   margin: 0  ;
 }
 
+body a {
+  color:#8475D4;
+}
+
 #part-1 {
   margin: 0 ;
   text-align: center ;
@@ -245,7 +249,7 @@ I want to make products that matter
 
 
   <p><b>[one]</b><br/>
-    Check out my projects at Github <a href="https://github.com/JaimeVelasco"><i class="fa fa-github-square"></i></a></p>
+    Check out my projects at Github<a href="https://github.com/JaimeVelasco"><i class="fa fa-github-square"></i></a></p>
    <br>
    <br>
   <p><b>[two]</b><br/>
