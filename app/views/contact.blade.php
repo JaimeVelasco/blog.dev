@@ -1,45 +1,47 @@
 @extends('layouts.master')
 
+@section('topscript')
+<style type="text/css">
+  body{
+    padding-top: 100px;
+  }
+
+</style>
+
+@stop
+
 @section('content')
 
-
+<br>
+<center><h1>Contact</h1> </center>
 <section id="contact" class="contact-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                <h1>Contact Section</h1>
-                <form class="form-horizontal">
-                  <fieldset>
-                    <legend>Contact me at (210)8656557 or use this form.</legend>
-                    <div class="form-group">
-                      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-                      <div class="col-lg-10">
-                        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-                      </div>
-                    </div>
-                   
-                    <div class="form-group">
-                      <label for="textArea" class="col-lg-2 control-label">Textarea</label>
-                      <div class="col-lg-10">
-                        <textarea class="form-control" rows="3" id="textArea"></textarea>
-                        <span class="help-block">...</span>
-                      </div>
-                    </div>
-                    
-                    <div class="form-group">
-                      <div class="col-lg-10 col-lg-offset-2">
-                        <button class="btn btn-default">Cancel</button>
-                        <button type="submit" class="btn btn-primary" <a href="mailto:jaime@photojv.com">Submit</button></a>
-                      </div>
-                    </div>
-                  </fieldset>
-                </form>
+                <div class="col-lg-4">
+                  
+                  <h3>
+                    Call me at 
+                    <br>
+                    <h2>(210)865.6557</h2>
+                    <br>
+                </div>
+                <div class="col-lg-4">
+                    Send me an email <br><br><a class="btn btn-info btn-lg" href="mailto:jaime@photojv.com?Subject=From%20the%20Web%20With%20Love" target="_top"> jaime@photojv.com</a>
+                 <br>
+                 <br>
+               </div>
+               <div class="col-lg-4">
+                  or visit
+                  </h3>
+                  <br>
+                  <h2 class="btn btn-info btn-lg"><a href="https://github.com/JaimeVelasco"><i class="fa fa-github fa-2x"></i></a></h2>
+                  <h2 class="btn btn-info btn-lg"><a href="https://www.linkedin.com/in/jaimevelascog"><i class="fa fa-linkedin fa-2x"></i></a></h2>
+                  <h2 class="btn btn-info btn-lg"><a href="https://twitter.com/JaimeVelas"><i class="fa fa-twitter fa-2x"></i></a></h2>
+              </div>
                 </div>
             </div>
         </div>
-    </section>
-
-
+</section>
 @stop
 
 @section('bottomscript')

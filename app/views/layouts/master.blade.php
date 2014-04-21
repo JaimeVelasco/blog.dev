@@ -8,14 +8,14 @@
     <link href="/assets/css/scrolling-nav.css" rel="stylesheet" type="text/css">
 
 @yield('topscript')
-<script type="text/css">
+<style type="text/css">
+    
 
-#alert
-{
-    text-align: center;
+a{
+    color: #fff;
 }
 
-</script>
+</style>
 
 </head>
 	    <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -39,9 +39,6 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="{{{ action('HomeController@showResume') }}}">Resume</a>
-                    </li> 
-                    <li class="page-scroll">
                         <a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a>
                     </li>
                     <li class="page-scroll">
@@ -56,8 +53,34 @@
                     </li>
                     @else
 
-                    <li class="page-scroll">
-                        <a href="{{{ action('HomeController@showLogin') }}}"><span class="label label-success">Login</span></a>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
+                        <ul class="dropdown-menu" style="padding: 15px;min-width: 200px;">
+
+
+                            {{ Form::open(array('action' => 'HomeController@doLogin', 'class' => 'form-signin')) }}
+                        <center><h2 class="form-signin-heading">Sign in</h2></center>
+                            {{ Form::email('email', null, array('class' => 'form-control', 'placeholder' => 'Email address', 'required', 'autofocus'))}}
+                        <br>
+                            {{ Form::password('password', array('class' => 'form-control', 'placeholder' => 'Password', 'required'))}}
+                        <br>
+                        <center>{{ Form::submit('Login',  array('class' => 'btn btn-lg btn-primary')) }}</center>
+                            {{ Form::close() }}
+                          
+
+
+                           <!--  
+                            {{ Form::open(array('action' => 'HomeController@showLogin', 'form-signin')) }}
+                            <br>  
+                            {{ Form::text('email', null, array('class' => 'form-control' , 'placeholder' => 'Email address', 'required' => 'required')) }}
+                            <br>
+                            {{ Form::password('password', array('class' => 'form-control', 'placeholder' => 'Password', 'required' => 'required')) }}
+                            <br>
+                            <center>{{ Form::submit('Login',  array('class' => 'btn btn-sm btn-info')) }}</center>
+                            {{ Form::close() }}
+                            <br> -->
+                                           
+                        </ul>
                     </li>
                     @endif
                 </ul>
