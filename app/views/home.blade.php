@@ -16,7 +16,7 @@ body {
 }
 
 body a {
-  color:#8475D4;
+  color:#8475D4; 
 }
 
 #part-1 {
