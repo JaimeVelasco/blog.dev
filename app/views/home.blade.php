@@ -228,7 +228,7 @@ I want to make products that matter
     <p class="smaller">
       Programming on a daily basis and <b>learning tons of new stuff</b> along the way.<br /><br />
 
-      Playing around <b>the convergence of software, hardware and humans</b>. Focusing in the user's emotional and behavioral reactions to my applications<br /><br />
+      Playing around <b>the convergence of software, hardware and humans</b>. Focusing on the user's emotional and behavioral reactions to my applications<br /><br />
 
       Developing dynamic applications that are <b>beautiful, robust, reliable and secure</b><br /><br />
      
