@@ -267,7 +267,7 @@ I want to make products that matter
 </div>
 
 <p id="salutations">
-  Contact me!
+  <a href="http://photojv.com/contact">Contact me!</a>
 <br />
 
   <p class="smaller" ><a href="mailto:jaime@photojv.com">jaime@photojv.com</a></p>
