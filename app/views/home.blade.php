@@ -249,7 +249,9 @@ I want to make products that matter
 
 
   <p><b>[one]</b><br/>
-    Check out my projects at Github<a href="https://github.com/JaimeVelasco"><i class="fa fa-github-square"></i></a></p>
+    Check out my projects at:
+    <br>
+    Github<a href="https://github.com/JaimeVelasco"> <i class="fa fa-github-square"></i> </a></p>
    <br>
    <br>
   <p><b>[two]</b><br/>
