@@ -44,9 +44,9 @@ a{
                     <li class="page-scroll">
                         <a href="{{{ action('HomeController@showContact') }}}">Contact</a>
                     </li>
-                    <li class="page-scroll">
+                  <!--   <li class="page-scroll">
                         <a href="{{{ action('PostController@index') }}}">Blog</a>
-                    </li>
+                    </li> -->
                     @if (Auth::check())
                     <li class="page-scroll">
                         <a href="{{{ action('HomeController@showLogin') }}}"><span class="label label-warning" >Logout&nbsp;{{ Auth::user()->email1 }}</span></a>
