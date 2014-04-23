@@ -34,9 +34,9 @@
                   or visit
                   </h3>
                   <br>
-                  <h2 class="btn btn-info btn-lg">GitHub<a href="https://github.com/JaimeVelasco"><i class="fa fa-github fa-2x"></i></a></h2>
-                  <h2 class="btn btn-info btn-lg">Linkedin<a href="https://www.linkedin.com/in/jaimevelascog"><i class="fa fa-linkedin fa-2x"></i></a></h2>
-                  <h2 class="btn btn-info btn-lg">Twitter<a href="https://twitter.com/JaimeVelas"><i class="fa fa-twitter fa-2x"></i></a></h2>
+                  <a href="https://github.com/JaimeVelasco"><h2 class="btn btn-info btn-lg"><i class="fa fa-github fa-2x"></i></h2></a>
+                  <a href="https://www.linkedin.com/in/jaimevelascog"><h2 class="btn btn-info btn-lg"><i class="fa fa-linkedin fa-2x"></i></h2></a>
+                  <a href="https://twitter.com/JaimeVelas"><h2 class="btn btn-info btn-lg"><i class="fa fa-twitter fa-2x"></i></h2></a>
               </div>
                 </div>
             </div>
