@@ -283,8 +283,8 @@ I want to make products that matter
 
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="/assets/js/jquery.fittext.js"></script>
-  <script src="/assets/js/jquery.columnizer.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/jquery.fittext.js"></script> 
+  <script src="/assets/js/jquery.columnizer.js" type="text/javascript" charset="utf-8"></script>
 
 
     <script type="text/javascript">
