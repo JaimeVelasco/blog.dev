@@ -30,10 +30,10 @@
                         <strong>Front-end Web Development</strong></p>
                 </div>
                 <ul class="list-group list-group-flush text-center">
-                    <li class="list-group-item"><i class="icon-ok text-danger"></i>Web portal for property management company</li>
-                    <li class="list-group-item"><i class="icon-ok text-danger"></i>May 2014</li>
+                    <li class="list-group-item"><i class="icon-ok text-danger"></i>At Wickley Interactive</li>
+                    <li class="list-group-item"><i class="icon-ok text-danger"></i>San Antonio, TX.</li>
                     <li class="list-group-item"><i class="icon-ok text-danger"></i>JavaScript, jQuery<br>
-                    HTML5/CSS3, PyroCMS, GitHub</li>
+                    HTML5/CSS3, GitHub, PHP</li>
                 <div class="panel-footer">
                     <a class="btn btn-lg btn-block btn-default" href="https://github.com/JaimeVelasco"><i class="fa fa-github"></i> Visit Website</a>
                 </div>
