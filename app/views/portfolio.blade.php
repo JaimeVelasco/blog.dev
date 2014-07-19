@@ -27,7 +27,7 @@
                 </div>
                 <div class="panel-body text-center">
                     <p class="lead">
-                        <strong>Front-end Web Developmentzzzzz</strong></p>
+                        <strong>Front-end Web Development</strong></p>
                 </div>
                 <ul class="list-group list-group-flush text-center">
                     <li class="list-group-item"><i class="icon-ok text-danger"></i>Web portal for property management company</li>
@@ -72,12 +72,12 @@
                         <strong>Professional Photographer</strong></p>
                 </div>
                 <ul class="list-group list-group-flush text-center">
-                    <li class="list-group-item"><i class="icon-ok text-danger"></i>+100 sessions last year</li>
+                    <li class="list-group-item"><i class="icon-ok text-danger"></i>+300 sessions</li>
                     <li class="list-group-item"><i class="icon-ok text-danger"></i>+10 years experience</li>
                     <li class="list-group-item"><i class="icon-ok text-danger"></i>Interested in old cameras and 19th century techniques</li>
                 </ul>
                 <div class="panel-footer">
-                    <a class="btn btn-lg btn-block btn-default" href="http://www.photojv.com">photojv.com</a>
+                    <a class="btn btn-lg btn-block btn-default" href="http://www.pinterest.com/jitos/my-photography/">My Photography</a>
                 </div>
             </div>
         </div>        
